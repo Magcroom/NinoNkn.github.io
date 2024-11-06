@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maze</title>
   <link rel="stylesheet" href="./EstiloLaberinto.css">
+  <script src="button-panel.js" defer></script>
 </head>
 <body>
 
@@ -52,6 +53,21 @@
       </div>
     </div>
   
+    <button-panel></button-panel>
+    <script>
+      const tiempoLimiteMinutos = 120; // Cambia este valor para ajustar los minutos
+      // Convertir minutos a milisegundos
+      const tiempoLimiteMilisegundos = tiempoLimiteMinutos * 60 * 1000;
+    
+      // Función para redirigir a la página de inicio
+      function redirigirInicio() {
+        window.location.href = "/NinoNkn.github.io/index.html"; 
+      }
+    
+      // Configuracion el temporizador para redirigir después del tiempo límite
+      setTimeout(redirigirInicio, tiempoLimiteMilisegundos);
+    </script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
   <script src="./Laberinto.js"></script>
