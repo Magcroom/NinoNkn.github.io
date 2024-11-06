@@ -27,5 +27,4 @@ document.addEventListener("DOMContentLoaded", updateTrophyDisplay);
 
 // Ejemplo de desbloqueo de trofeos para probar
 // Desbloquea "Maestro del Laberinto" después de 3 segundos y "Explorador Intrépido" después de 6 segundos
-setTimeout(() => unlockTrophy("trophy-maestro"), 3000);
-setTimeout(() => unlockTrophy("trophy-explorador"), 6000);
+
